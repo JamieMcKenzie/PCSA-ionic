@@ -42,6 +42,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.landingPage', {
+    url: '/landingPage',
+    views: {
+      'menuContent': {
+        templateUrl: 'js/landingPage/landing-page-view.html',
+        controller: 'LandingPageController'
+      }
+    }
+  })
 
   .state('app.reporting', {
     url: '/reporting',
